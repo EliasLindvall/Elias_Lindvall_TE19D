@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+.item {
+    flex-grow: 1;
+    height: 100px;
+    background-color: #1b1b1b;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 10, 15, 15, black, 5, 20, 15, black;
+}
+.item + .item {
+    margin-left: 2%; 
+}

@@ -1,0 +1,25 @@
+body {
+    background:url(https://www.wildtextures.com/wp-content/uploads/wildtextures_short-grass-field-seamless-texture-1280x1280.jpg)  
+}
+
+.long {
+    background-color: white;
+    position:relative;
+    top:2000px;
+    height:300px;
+}
+
+.home-div {
+    background-color: white;
+    position: relative;
+    top:5px;
+    left:5px;
+    right:15px;
+    width:1460px;
+    height: 200px;
+    margin:auto;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+

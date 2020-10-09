@@ -1,0 +1,72 @@
+
+body {
+    background:url(https://www.wildtextures.com/wp-content/uploads/wildtextures_short-grass-field-seamless-texture-1280x1280.jpg)  
+}
+.home-div {
+    background-color: white;
+    position: relative;
+    top:5px;
+    left:5px;
+    right:15px;
+    width:1460px;
+    height: 200px;
+    margin:auto;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+    height: 500px;
+  }
+  
+  .item {
+    width: 32%;
+    height: 40%;
+    padding-bottom: 32%; /* Same as width, sets height */
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    position: relative;
+    left: 240px;
+    top: 100px;
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 7px;
+  }
+  h1 {
+      position: relative;
+      top:38%
+  }
+  h1:hover {
+      transform: scale(1.07)
+  }
+
+  a {
+      color: black;
+      text-decoration: none;
+  }
+
+  .small-titleist {
+      width:300px;
+  }
+
+  .small-callaway {
+      width: 220px;
+      position: relative;
+      top:40px;
+  }
+
+  .titleist-txt {
+      position: relative;
+      bottom:38px;
+  }
+
+  .callaway-txt {
+      position: relative;
+      top:40px;
+  }
+  
