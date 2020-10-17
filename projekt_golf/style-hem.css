@@ -13,7 +13,7 @@ body {
     background-color: white;
     position: relative;
     top:5px;
-    left:5px;
+    left:0px;
     right:15px;
     width:1460px;
     height: 200px;
@@ -22,4 +22,57 @@ body {
     border-radius: 10px;
 }
 
+.img-logo1 {
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    
+}
+
+.div-golfbollar {
+    float: left;
+    position: absolute;
+    top:78px;
+    left:275px;
+     
+}
+
+.div-golfbollar:hover {
+    transform: scale(1.01);
+}
+.button-golfbollar:hover {
+    background-color:rgba(144, 238, 144, 0.2);
+    
+}
+
+.button-golfbollar {
+    border:none;
+    border-left: 3px solid #141414;
+    border-right: 3px solid #141414;
+    background: transparent;
+    font-size: 40px;
+}
+
+.hr1 {
+    float: left;
+    width: 260px;
+    height: 2px;
+    background-color:#141414 ;
+    position: absolute;
+    top: 47%;
+    left:15px;
+    border: none
+}
+.hr2 {
+    float:left;
+    width:55px;
+    height:2px;
+    background-color: #141414;
+    position: absolute;
+    top: 47%;
+    left: 464px;
+    border:none;
+}
 
