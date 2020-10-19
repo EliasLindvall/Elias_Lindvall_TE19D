@@ -9,6 +9,8 @@ body {
     height:300px;
 }
 
+/* top div style  */
+
 .home-div {
     background-color: white;
     position: relative;
@@ -43,8 +45,7 @@ body {
     transform: scale(1.01);
 }
 .button-golfbollar:hover {
-    background-color:rgba(144, 238, 144, 0.2);
-    
+    background-color:rgba(144, 238, 144, 0.2);  
 }
 
 .button-golfbollar {
@@ -75,4 +76,52 @@ body {
     left: 464px;
     border:none;
 }
+
+.div-klasser {
+    float: right;
+    position: absolute;
+    top:78px;
+    right: 313px;
+}
+
+.div-klasser:hover {
+    transform: scale(1.01);
+}
+
+
+.button-klasser {
+    border:none;
+    border-left: 3px solid #141414;
+    border-right: 3px solid #141414;
+    background: transparent;
+    font-size: 40px;
+}
+
+.button-klasser:hover {
+    background-color:rgba(144, 238, 144, 0.2);  
+}
+
+.hr3 {
+    float:right;
+    width:55px;
+    height:2px;
+    background-color: #141414;
+    position: absolute;
+    top:47%;
+    right: 464px;
+    border: none;
+}
+
+.hr4 {
+    float: right;
+    width: 298px;
+    height: 2px;
+    background-color: #141414;
+    position: absolute;
+    top: 47%;
+    right:15px;
+    border:none
+}
+
+/* top div style ^ */
 
