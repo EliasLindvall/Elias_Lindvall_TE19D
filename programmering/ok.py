@@ -113,46 +113,31 @@ print(summa)
 f)
 '''
 print("   ")
+print("   f)")
 print("   ")
 import math 
 import random
 
+
 summa=0
+for i in range (100):
+    
+    x1= random.uniform(-1,1)
 
-x1= 0
+    y1= random.uniform(-1,1)
 
-y1= 0
 
-x2= random.uniform(-1,1)
+    dist = math.sqrt((x1-0)**2 + (y1-0)**2)
 
-y2= random.uniform(-1,1)
-
-x3 = random.uniform(-1,1)
-
-y3 = random.uniform(-1,1)
-
-x4 = random.uniform(-1,1)
-
-y4 = random.uniform(-1,1)
-
-dist1 = math.sqrt((x2-x1)**2 + (y2-y1)**2)
-
-dist2 = math.sqrt((x4-x1)**2 + (y3-y1)**2)
-
-dist3 = math.sqrt((x4-x1)**2 + (y4-y1)**2)
-
-if dist1 < 1:
-    summa += 1
-
-if dist2 < 1:
-    summa += 1
-
-if dist3 < 1:
-    summa += 1
+    if dist <= 1:
+        summa +=1
+    
 
 multsum = summa*4
 
+
 print (multsum)
+print (summa)
 
 
 '''

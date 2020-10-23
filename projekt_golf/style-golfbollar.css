@@ -42,7 +42,7 @@ body {
       top:38%
   }
   h1:hover {
-      transform: scale(1.07)
+      transform: scale(1.04)
   }
 
   a {
@@ -60,13 +60,24 @@ body {
       top:40px;
   }
 
+  .small-bridgestone {
+      width: 235px;
+      position: relative;
+      top: 37px;
+  }
+
   .titleist-txt {
       position: relative;
-      bottom:38px;
+      bottom:40px;
   }
 
   .callaway-txt {
       position: relative;
       top:40px;
+  }
+
+  .bridgestone-txt {
+      position: relative;
+      top: 27px;
   }
   
