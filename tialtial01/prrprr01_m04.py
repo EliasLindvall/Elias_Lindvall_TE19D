@@ -73,7 +73,7 @@ rats = 100
 month =0
 
 while rats <1000000:
-    rats *2
+    rats = rats*2
     month += 1
 
-print(f"det tar {month} månader tills det blir 1 miljon råttor i staden")
+print(month)
