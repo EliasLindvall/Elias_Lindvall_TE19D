@@ -125,3 +125,38 @@ body {
 
 /* top div style ^ */
 
+.container {
+    display: flex;
+  }
+  
+.item {
+    height: 1000px;
+    width: 250px; /* A fixed width as the default */
+    background-color: blue;
+    position: relative;
+    top: 65px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    
+}
+  
+.item-center { 
+    flex-grow: 1; /* Set the middle element to grow and stretch */
+    background-color: white;
+    position: relative;
+    top: 65px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+}
+  
+.item + .item { 
+    margin-left: 2%; 
+}
+
+.item + .item-center {
+    margin-left: 3%;
+    margin-right: 3%;
+}

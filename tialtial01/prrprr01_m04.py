@@ -54,7 +54,26 @@ print("   ")
 '''
 m04u04
 '''
-tal = 10
-while tal > 1:
-    
 
+tal=11
+
+while tal >1:
+    tal -=1
+    print(tal, end=" ")
+
+
+print("   ")
+print("   m04u05")
+print("   ")
+'''
+m04u05
+'''
+
+rats = 100
+month =0
+
+while rats <1000000:
+    rats *2
+    month += 1
+
+print(f"det tar {month} månader tills det blir 1 miljon råttor i staden")
