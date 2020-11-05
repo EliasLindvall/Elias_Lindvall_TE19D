@@ -119,7 +119,8 @@ import math
 import random
 
 
-summa=0
+summa = 0
+
 for i in range (100):
     
     x1= random.uniform(-1,1)
@@ -133,7 +134,7 @@ for i in range (100):
         summa +=1
     
 
-multsum = summa*4
+multsum = summa * 4
 
 
 print (multsum)
@@ -146,7 +147,7 @@ g)
 print("   ")
 print("   ")
 
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import math 
 import random
 
@@ -196,6 +197,11 @@ plt.plot (x2, y2, '*r')
 plt.plot (x3, y3, '*g')
 plt.show
 print (summa)
+
+'''
+Burr
+a)
+'''
 
 
 

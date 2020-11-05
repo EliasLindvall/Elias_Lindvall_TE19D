@@ -57,23 +57,175 @@ m04u04
 
 tal=11
 
-while tal >1:
-    tal -=1
+while tal > 1:
+    tal -= 1
     print(tal, end=" ")
 
 
 print("   ")
 print("   m04u05")
 print("   ")
+
 '''
 m04u05
 '''
 
 rats = 100
-month =0
+month = 0
 
 while rats <1000000:
     rats = rats*2
     month += 1
+    print (rats, end=" ")
 
-print(month)
+print(f"det tar {month} månader tills det blir 1 miljon råttor i staden")
+print("   ")
+print("   m04e01")
+print("   ")
+'''
+m04e01
+'''
+konto= 10000
+
+år = 0
+
+while år <15:
+    år += 1
+    konto = konto*1.03
+    print(konto, end=" ")
+
+print (f"det finns {konto}kr på kontot efter 15 år")
+
+print("   ")
+print("   m04e02")
+print("   ")
+'''
+m04e02
+'''
+
+rats = 100
+month = 0
+
+for i in range(1000):
+    rats = rats*2
+    month +=1
+    if rats >1000000:
+        break
+
+print (month)
+
+print("   ")
+print("   m04u06")
+print("   ")
+'''
+m04u06
+'''
+
+tal = int(input("Vilket tal ska loopen börja med?"))
+
+talend = int(input("Vilket tal ska loopen sluta på?"))
+
+talskip = int(input("Vilket tal ska loopen inte skriva ut?"))
+
+talbreak = int(input("Vilket tal ska avbryta loopen?"))
+
+while tal < talend:
+    tal += 1
+    if tal == talskip:
+        tal +=1
+        print(tal)
+    elif tal == talbreak:
+        break
+    else:
+        print(tal)
+
+print(f"loopen avbröts vid {talbreak}")
+
+print("   ")
+print("   m04u07")
+print("   ")
+'''
+m04u07
+'''
+while True:
+    try:
+        tal = int(input("Vilket tal ska loopen börja med?"))
+        break
+    except:
+        print("Du kan endast ange ett heltal, försök igen.")
+
+while True:
+    try:
+        talend = int(input("Vilket tal ska loopen sluta på?"))
+        break
+    except:
+        print("Du kan endast ange ett heltal, försök igen.")
+
+while True:
+    try:
+        talskip = int(input("Vilket tal ska loopen inte skriva ut?"))
+        break
+    except:
+        print("Du kan endast ange ett heltal, försök igen.")
+
+while True:
+    try:
+        talbreak = int(input("Vilket tal ska avbryta loopen?"))
+        break
+    except:
+        print("Du kan endast ange ett heltal, försök igen.")
+
+
+while tal < talend:
+    tal += 1
+    if tal == talskip:
+        tal +=1
+        print(tal)
+    elif tal == talbreak:
+        break
+    else:
+        print(tal)
+
+print(f"loopen avbröts vid {talbreak}")
+
+print("   ")
+print("   m04u08")
+print("   ")
+'''
+m04u08
+'''
+
+tal = 5
+lista = []
+
+while tal != 0:
+    tal = int(input("Skriv in ett heltal som ska vara i listan skriv ut 0 för att avsluta listan: "))
+    if tal == 0:
+        break
+    lista.append(tal)
+    
+
+summa = (sum(lista))
+
+maxvärde = (max(lista))
+
+minvärde = (min(lista))
+
+print(f"Summan av alla tal i listan är {summa}")
+print(f"maxvärdet i listan är {maxvärde}")
+print(f"minvärdet i listan är {minvärde}")
+
+print("   ")
+print("   m04u09")
+print("   ")
+'''
+m04u09
+'''
+
+import random.randint as rnd 
+slag = int(input("hur många tärningslag vill du göra? "))
+
+for n in range(slag):
+    
+
+
