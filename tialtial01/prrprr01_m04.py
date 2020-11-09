@@ -222,10 +222,31 @@ print("   ")
 m04u09
 '''
 
-import random.randint as rnd 
+import random as rnd
 slag = int(input("hur många tärningslag vill du göra? "))
+dicelist = []
+
+ettor = tvåor = treor = fyror = femmor = sexor = 0 
 
 for n in range(slag):
-    
+    tal=rnd.randint(1,6)
 
+    dicelist.append(tal)
+
+    if tal == 1:
+        ettor+=1
+    elif tal ==2:
+        tvåor+=1
+    elif tal ==3:
+        treor+=1
+    elif tal ==4:
+        fyror+=1
+    elif tal ==5:
+        femmor+=1
+    elif tal ==6:
+        sexor+=1
+
+print(dicelist)
+
+print(f"det finns {ettor} ettor, {tvåor} tvåor, {treor} treor, {fyror} fyror, {femmor} femmor och {sexor} sexor,")
 
