@@ -134,6 +134,8 @@ resultat = (summa * 4)/10000
 print (f"resultatet blev {resultat}")
 print (summa)
 
+# desto mer punkter man simulerar desto närmare pi kommer resultatet.
+# förhållandet mellan kvadratens area och cirkelns area är 4/pi därför blir cirkelns area gånger 4 delat på kvadratens area lika med pi.
 
 '''
 # g)
@@ -176,7 +178,7 @@ import random
 
 summa = 0
 
-for i in range (1000):
+for i in range (10000):
     
     x1= random.uniform(-2,2)
 
