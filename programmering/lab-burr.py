@@ -52,25 +52,27 @@ end = int(input("Vilket nummer ska spelet sluta på? ")) + 1
 burr = int(input("Skriv in vilket tal du vill ska bli Burr: "))
 birr = int(input("Skriv in vilket tal du vill ska bli Birr: "))
 
-BurrCounter = BirrCounter = 0
+BurrCounter = BirrCounter = BirrBurrCounter = 0
 
 for i in range(start, end):
+    if i%burr == 0 and i%birr == 0:
+        print("BirrBurr")
+        BurrCounter +=1
+        BirrCounter +=1
+        BirrBurrCounter +=1
         
-    if i%burr == 0:
+    elif i%burr == 0:
         print("Burr")
         BurrCounter += 1
         
-    if i%birr == 0:
+    elif i%birr == 0:
         print("Birr")
         BirrCounter += 1
         
-    
-    
-    print(i)
+    else:
+        print(i)
 
-
-
-print(f"{BurrCounter} st Burr och {BirrCounter} st Birr")
+print(f"{BurrCounter} st Burr, {BirrCounter} st Birr och {BirrBurrCounter} st BirrBurr. ")
 
 '''
 # f)
@@ -81,14 +83,14 @@ end = int(input("Vilket nummer ska spelet sluta på? ")) + 1
 burr = int(input("Skriv in vilket tal du vill ska bli Burr: "))
 birr = int(input("Skriv in vilket tal du vill ska bli Birr: "))
 
-BurrCounter = BirrCounter = BurrBirrCounter = 0
+BurrCounter = BirrCounter = BirrBurrCounter = 0
 
 for i in range(start, end):
     if i%burr == 0 and i%birr == 0:
-        print(f"{i} = BurrBirr")
+        print(f"{i} = BirrBurr")
         BurrCounter +=1
         BirrCounter +=1
-        BurrBirrCounter +=1
+        BirrBurrCounter +=1
         
     elif i%burr == 0:
         print(f"{i} = Burr")
@@ -101,11 +103,8 @@ for i in range(start, end):
     else:
         print(i)
 
-print(f"{BurrCounter} st Burr, {BirrCounter} st Birr och {BurrBirrCounter} st BurrBirr. ")
+print(f"{BurrCounter} st Burr, {BirrCounter} st Birr och {BirrBurrCounter} st BirrBurr. ")
 
 '''
-Jag har lagt till en ny funktion i programmet, om Burr och Birr både är delbart med samma tal t.ex om vi väljer att Burr är 5 och Birr 10
-så kommer programmet vid 10 istället för att både skriva ut Birr och Burr separat så kommer programmet skriva ut BurrBirr. Programmet räknar
-Fortfarande BurrBirr som en  enskild Burr och Birr i Burr- och Birrcounter:n.
-Istället för att ersätta talet med burr eller birr står det nu t.ex 5 = burr.
+Istället för att ersätta talet med burr, birr eller birrburr står det nu t.ex 5 = burr.
 '''
