@@ -178,7 +178,7 @@ import random
 
 summa = 0
 
-for i in range (10000):
+for i in range (1000):
     
     x1= random.uniform(-2,2)
 

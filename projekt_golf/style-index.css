@@ -9,7 +9,7 @@ body {
     height:300px;
 }
 
-/* top div style  */
+/* top div style start  */
 
 .home-div {
     background-color: white;
@@ -31,6 +31,18 @@ body {
     display: block;
     position: relative;
     
+}
+
+.index-div {
+    background-color: transparent;
+    position: absolute;
+    top: auto;
+    left: 535px;
+    top: 20px;
+    width: 392px;
+    height: 160px;
+    z-index: 1;
+
 }
 
 .div-golfbollar {
@@ -123,7 +135,7 @@ body {
     border:none
 }
 
-/* top div style ^ */
+/* top div style end ^ */
 
 .container {
     display: flex;
