@@ -95,5 +95,25 @@ p {
 }
 
 .http-div {
-    
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-right: auto;
+    width: 300px;
+    border-left: 2px solid black;
+}
+
+.http-img {
+    width: 150px;
+    position: relative;
+    bottom: 335px;
+    left: 385px;
+}
+
+.http-img1 {
+    width: 430px;
+    position: relative;
+    left: 400px;
+    bottom: 250px;
+    border: 1px solid transparent;
+    border-radius: 10px;
 }
