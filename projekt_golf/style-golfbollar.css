@@ -190,6 +190,19 @@ body {
       top: 40px;
   }
 
+  .small-flite {
+      width: 305px;
+      position: relative;
+      top: 7px;
+
+  }
+
+  .small-nike {
+      width: 255px;
+      position: relative;
+      top: 40px;
+  }
+
   .titleist-txt {
       position: relative;
       bottom:40px;
@@ -206,7 +219,18 @@ body {
   }
 
   .wilson-txt {
-      position: relative;;
+      position: relative;
+      top: 5px;
+    
+  }
 
+  .flite-txt {
+      position: relative;
+      bottom: 60px;
+  }
+
+  .nike-txt {
+      position: relative;
+      
   }
   

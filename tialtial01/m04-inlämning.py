@@ -174,8 +174,8 @@ while True:
 
 print(*rekinfo, sep = "\n")
 
-print(sidor)
-print(höjder)
+print(f"sidor {sidor}")
+print(f"höjder {höjder}")
 
 '''
 e
@@ -184,8 +184,13 @@ e
 def räkna_area(sid1, sid2):
     return sid1*sid2
 
+def räkna_volym(sid1, sid2, höjd):
+    return sid1*sid2*höjd
+
 rekinfo = []
 
+sidor = []
+höjder = []
 while True:
     sid1 = int(input("Ange rektangelns första sida: "))
     sid2 = int(input("ange rektangelns andra sida: "))
@@ -197,7 +202,6 @@ while True:
         except:
             print("Du har gjort en felaktig inmatning, ange ett heltal")
             
-    
     if höjd <1:
         höjd = 1
         print("Eftersom du matade in ett negativt tal så sattes höjden automatiskt till 1")
@@ -205,7 +209,10 @@ while True:
         höjd=10
         print("Eftersom du matade in ett tal som var större än 10 så sänktes höjden automatiskt till 10")
 
-    area = räkna_area(sid1,sid2)
+    sidor.append(sid1)
+    sidor.append(sid2)
+    höjder.append(höjd)
+    area = räkna_area(sid1, sid2)
 
     print(f"Rektangeln har sidorna {sid1} och {sid2} vilket gör arean till {area}")
 
@@ -232,3 +239,8 @@ while True:
         continue
     else:
         break
+
+print(*rekinfo, sep = "\n")
+
+print(f"sidor {sidor}")
+print(f"höjder {höjder}")
