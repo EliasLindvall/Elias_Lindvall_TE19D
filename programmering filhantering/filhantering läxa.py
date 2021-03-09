@@ -14,3 +14,4 @@ with open("diceRoll.txt", "w") as ok:
     for number in rolls:
         ok.write(str(number))
 
+
