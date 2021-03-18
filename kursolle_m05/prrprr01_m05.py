@@ -40,11 +40,14 @@ tomten()
 '''
 poäng = []
 
-with open ('provpoäng.txt', 'r') as f:
+with open ('provpoäng.txt', 'r+') as f:
     for rad in f:
         poäng.append(rad)
+        print (rad)
 
-print (rad)
+print (poäng)
 
+poäng.sort()
 
+print (poäng)
 
