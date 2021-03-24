@@ -61,7 +61,7 @@ body {
 }
 
 .grid {
-     background-color: #fa5457;
+    background-color: #fa5457;
 }
 
 .code-snippets {
@@ -154,7 +154,7 @@ p {
     width: 300px;
     position: relative;
     left: 575px;
-    bottom:220px;
+    bottom: 220px;
 }
 
 .compressed-img {
