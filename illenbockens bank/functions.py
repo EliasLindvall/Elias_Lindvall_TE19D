@@ -1,13 +1,12 @@
 from config import *
-import os
 
-def balance():
+def balance():      # Beräknar saldot
     balance=0
     for t in transaktioner:
         balance+=t
     return balance
 
-def validate_int(output, error_mess):
+def validate_int(output, error_mess):       # Kollar om inputen är ett heltal
     while True:
         try:
             value = int(input(output))
@@ -16,7 +15,7 @@ def validate_int(output, error_mess):
             print(error_mess)
     return value
 
-def print_transactions():
+def print_transactions():       # skriver ut transaktionslistan
         line=0
         summa=0
         head = ("\n    Alla transaktioner\n"
@@ -28,8 +27,7 @@ def print_transactions():
             summa += i
             print("{:>2} {:>9} kr {:>9} kr".format(line,i,summa))
 
-def check_file_exists():
-
+def check_file_exists():        # Kollar om "transaktioner.txt" finns om inte så skapas den
     try:
         with open(filename, "x"):
             print (f"filen {filename} skapades")
@@ -40,7 +38,7 @@ def check_file_exists():
         return
 
 
-def move_transactions():
+def move_transactions():        # Lägger till alla transaktioner från "transaktioner.txt" till listan transaktioner
 
     check_file_exists()
 
@@ -49,11 +47,11 @@ def move_transactions():
             if len(rad) > 0:
                 transaktioner.append(int(rad))
 
-def add_transaction(transaktion, toFile = False):
+def add_transaction(transaktion, toFile = False):       # Lägger till en transkation till listan och filen "transaktioner.txt"
     transaktioner.append(transaktion)
     if toFile:
         write_transaction_to_file(transaktion)
 
-def write_transaction_to_file(transaktion):
+def write_transaction_to_file(transaktion):     # Skriver en transaktion till filen "transaktioner.txt"
     with open(filename, "a") as f:
         f.write(f"{transaktion}\n")
