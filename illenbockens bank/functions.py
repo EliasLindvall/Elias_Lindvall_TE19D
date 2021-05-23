@@ -6,10 +6,19 @@ def balance():      # Beräknar saldot
         balance+=t
     return balance
 
-def validate_int(output, error_mess):       # Kollar om inputen är ett heltal
+def validate_int(output, error_mess):       # Kollar om inputen är ett heltal om inte så skriver den ut ett error meddelande
     while True:
         try:
             value = int(input(output))
+            break
+        except:
+            print(error_mess)
+    return value
+
+def validate_float(output, error_mess):       # Kollar om inputen är ett heltal eller decimaltal om inte så skriver den ut ett error meddelande
+    while True:
+        try:
+            value = float(input(output))
             break
         except:
             print(error_mess)
@@ -45,7 +54,7 @@ def move_transactions():        # Lägger till alla transaktioner från "transak
     with open(filename) as f:
         for rad in f:
             if len(rad) > 0:
-                transaktioner.append(int(rad))
+                transaktioner.append(float(rad))
 
 def add_transaction(transaktion, toFile = False):       # Lägger till en transkation till listan och filen "transaktioner.txt"
     transaktioner.append(transaktion)

@@ -10,17 +10,17 @@ while True:
     meny = ("\n############################"
     "\n#                          #"
     "\n#    illenbockens bank     #"
-    f"\n#       Saldo: {balance()}kr      #"
+    f"\n#       Saldo: {balance()}kr    #"
     "\n#                          #"
     "\n############################"
     "\n "
 
-    "\n 1: Visa transaktioner."
-    "\n 2: Sätt in pengar."
-    "\n 3: Ta ut pengar."
-    "\n 4: Nollställ kontot"
-    "\n 5: Avsluta applikationen."
-    "\n Gör ditt val (1-5):")
+    "\n   1: Visa transaktioner."
+    "\n   2: Sätt in pengar."
+    "\n   3: Ta ut pengar."
+    "\n   4: Nollställ kontot"
+    "\n   5: Avsluta applikationen."
+    "\n   Gör ditt val (1-5):")
 
 
     val = validate_int(meny, "Felaktig inmatning! Gör om gör rätt.")            # Kollar om valet är ett giltigt svar
@@ -31,7 +31,10 @@ while True:
 
 
     elif val == 2:          # Sätta in pengar
-        insättning = validate_int("Hur mycket pengar vill du sätta in (kr)?","Felaktig inmatning! Gör om gör rätt.")
+        insättning = validate_float("Hur mycket pengar vill du sätta in (kr)?","Felaktig inmatning! Gör om gör rätt.")
+
+        insättning = round(insättning,2)         # Avrundar talet till 2 decimaler
+
         if insättning > 0:
             add_transaction(insättning, True)
         else:
@@ -39,7 +42,10 @@ while True:
     
 
     elif val == 3:          # Ta ut pengar
-        uttag = validate_int("Hur mycket pengar vill du ta ut (kr)?", "Felaktig inmatning! Gör om gör rätt.")
+        uttag = validate_float("Hur mycket pengar vill du ta ut (kr)?", "Felaktig inmatning! Gör om gör rätt.")
+
+        uttag = round(uttag,2)          # Avrundar talet till 2 decimaler
+
         if uttag > balance():
             print(f"Du kan inte ta ut mer än {balance()}kr")
         elif uttag < 0:
