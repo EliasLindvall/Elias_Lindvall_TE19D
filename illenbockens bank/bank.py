@@ -1,7 +1,10 @@
 from functions import *
+from datetime import datetime
 import os
 
+
 move_transactions()
+move_dates()
     
 # Programloopen
 while True:
@@ -37,6 +40,9 @@ while True:
 
         if insättning > 0:
             add_transaction(insättning, True)
+            datum2 = datetime.now()
+            datum3 = datum2.strftime("%d/%m/%Y")
+            add_date(datum3)
         else:
              print("insättningen kan inte vara negativ.")
     
@@ -51,20 +57,26 @@ while True:
         elif uttag < 0:
             print("uttaget kan inte vara negativt.")
         else:
-            add_transaction(-uttag, True)  
+            add_transaction(-uttag, True)
+            datum1 = datetime.now()
+            datum = datum1.strftime("%d/%m/%Y %H:%M:%S")
+            add_date(datum3)
 
 
     elif val == 4:          # Nollställa kontot
-        nollställ= int(input("Är du säker detta nollställer hela kontot?\n1. Ja\n2. Nej\nVälj (1-2):"))
-        if nollställ == 1:
+        nollställ= str(input("Är du säker detta nollställer hela kontot?\n1. Ja\n2. Nej\nVälj (1-2):"))
+        if nollställ == '1':
             os.remove(filename)
+            os.remove(filename2)
             transaktioner.clear()
+            datumlista.clear()
             move_transactions()
+            move_dates()
         else:
             continue
 
 
-    elif val == 5:          # Avsluta programmet
+    elif val == 5:          # Avslutar programmet
         break
 
-
+write_dates_to_file()
