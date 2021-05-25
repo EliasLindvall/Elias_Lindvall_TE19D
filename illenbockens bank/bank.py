@@ -53,14 +53,14 @@ while True:
         uttag = round(uttag,2)          # Avrundar talet till 2 decimaler
 
         if uttag > balance():
-            print(f"Du kan inte ta ut mer än {balance()}kr")
+            print(f"Du kan inte ta ut mer än {balance()}kr just nu.")
         elif uttag < 0:
             print("uttaget kan inte vara negativt.")
         else:
             add_transaction(-uttag, True)
             datum1 = datetime.now()
-            datum = datum1.strftime("%d/%m/%Y %H:%M:%S")
-            add_date(datum3)
+            datum = datum1.strftime("%d/%m/%Y")
+            add_date(datum)
 
 
     elif val == 4:          # Nollställa kontot
